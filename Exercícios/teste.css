@@ -1,0 +1,26 @@
+#p1
+{
+    text-align:center;
+    color:blue;
+}
+
+.centralizado
+{
+    text-align:center;
+
+}
+
+body
+{
+    background-color: #00BFFF;
+    background-size: auto;
+}
+
+.img1
+{
+	float: right;
+	width: 110px;
+	height: 90px;
+}
+
+
