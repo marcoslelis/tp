@@ -1,0 +1,145 @@
+/*input:required:invalid, input:focus:invalid{
+    background-color: red;
+}
+
+input:required:valid{
+    background-color: green;
+}
+*/
+body{
+    background-color: #F4E9CD;
+}
+
+
+.fundo_texto
+{
+    min-height: 25px;
+    max-height: 150px;
+    width: 200px;
+    float: left;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    color:#9DBEBB;
+    font-size: 16 px;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    background-color: #254D58;
+    margin-left: 1%;
+   
+}
+
+.fundo_texto2
+{
+    height: 133px;
+    width: 200px;
+    float: left;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    color:#9DBEBB;
+    font-size: 16 px;
+   font-family: 'Arial Narrow', Arial, sans-serif;
+    background-color: #254D58;
+    margin-left: 1%;
+}
+
+.fundo_texto3
+{
+   height: 160px;
+    width: 200px;
+    float: left;
+    padding-top: 5px;
+    padding-bottom: 2px;
+  
+    color:#9DBEBB;
+    font-size: 16 px;
+   font-family: 'Arial Narrow', Arial, sans-serif;
+    background-color: #254D58;
+    margin-left: 1%;
+}
+
+.fundo_texto4
+{
+   height: 63px;
+    width: 200px;
+    float: left;
+    padding-top: 5px;
+    padding-bottom: 2px;
+   
+    color:#9DBEBB;
+    font-size: 16 px;
+   font-family: 'Arial Narrow', Arial, sans-serif;
+    background-color: #254D58;
+    margin-left: 1%;
+}
+
+.fundo_input
+{
+    background-color: blue;
+    min-height: 25px;
+    max-height: 150px;
+    width: 400px;
+    float: left;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 2px;
+    padding-top: 5px;
+    padding-left: 2px;
+}
+
+.fundo_input2
+{
+    background-color: blue;
+    min-height: 25px;
+    max-height: 180px;
+    width: 400px;
+    float: left;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 2px;
+    padding-top: 5px;
+    padding-left: 2px;
+}
+
+.entrada
+{
+    width: 91%;
+    height: 18px;
+}
+
+.clear
+{
+    clear: both;
+}
+
+.botao
+{
+    margin-left: 8%;
+    border-color: black;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+.erro
+{
+    color: red;
+}
+
+#titulo
+{
+    color: #468189;
+    font-size: 24 px;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+#subTitulo
+{
+    color: #77ACA2;
+    font-size: 20 px;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+

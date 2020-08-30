@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="formulario.css">
+    <script type="text/javascript" src="Javascript/javascript.js"></script> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <style>
+        input:required:invalid, input:focus:invalid
+        {
+            background-image:url("Imagens/wrong.gif");
+            background-repeat: no-repeat;
+            background-position: right;
+        }
+        input:required:valid
+        {
+            background-image: url("Imagens/check.png");
+            background-repeat: no-repeat;
+            background-position: right;
+        }
+    </style>
+
+    <body>
+
+<h1 id="titulo">Cadastre seu curriculo</h1>
+        <form name="form" autocomplete="off" action="salvarOsDados" method="post">
+        <h2 id="subTitulo">1. Dados Pessoais</h2>
+        
+
+        <div>
+        <a class="fundo_texto">Nome: </a>
+        </div>
+        <div class ="fundo_input">
+        <input class ="entrada" type="text" name="nome" placeholder="Digite seu nome" required>
+        </div>
+       
+        <div class="clear"> </div>
+
+        <div class="fundo_texto">
+        <a> Data de nascimento: </a>
+        </div>      
+
+        <div class="fundo_input">
+        <a> <input type="date" name="data"/> </a>
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="fundo_texto">
+        <a> Estado civil: </a>
+        </div>
+        
+        <div class="fundo_input">
+        <select name="estadoCivil">
+            <option selected value ="selecione">Selecione o estado civil</option>
+            <option value="solteiro">Solteiro(a)</option>
+            <option value="casado">Casado(a)</option>
+            <option value="viuvo">Viúvo(a)</option>
+            <option value="divorciado">Divorciado(a)</option>
+        </select>
+        <span id="idErro" class="erro"></span> 
+        
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="fundo_texto">
+        <a>Gênero:</a>
+        </div>
+
+        <div class="fundo_input">
+        <input type="radio" name ="sexo" value="masculino" /> Masculino &nbsp;&nbsp;
+        <input type="radio" name ="sexo" value="feminino" /> Feminino
+        </div>
+
+        <div class="clear"></div>
+
+        <h2 id="subTitulo">2. Objetivo</h2>
+        <div class="fundo_texto3">
+           <a>Objetivo: </a>
+        </div>
+
+        <div class="fundo_input2">
+        <textarea name="objetivo" cols="40" rows="10" placeholder="Resumo sobre seu objetivo de carreira"></textarea>
+        </div>
+
+        <div class="clear"></div>
+
+        <h2 id="subTitulo">3. Contato</h2>
+    
+        <div class="fundo_texto"> 
+        <a>Endereço: </a>
+        </div>
+
+        <div class="fundo_input">
+        <input class="entrada" type="text" name="Endereço" placeholder="Digite seu endereço" required>
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="fundo_texto">
+        <a>Cidade/Estado:</a>
+        </div>
+        
+        <div class="fundo_input">
+        <input type="text" name="Cidade" placeholder="Digite sua cidade" required>
+        &nbsp;/&nbsp;
+        <input type="text" name="Estado" placeholder="Digite seu estado" required
+        pattern="[A-Z]{2}">
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="fundo_texto">
+        <a>CEP:</a>
+        </div>
+        
+        <div class="fundo_input">
+        <input class="entrada" type="text" name="CEP" pattern="[0-9]{5}[\-][0-9]{3}"
+        placeholder="CEP no formato 99999-999" required>
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="fundo_texto">
+        <a>Telefone:</a>
+        </div>
+
+        <div class="fundo_input">
+        <input class ="entrada" type="tel" name="tel" placeholder="Telefone no formato (99) 9999-9999"
+        pattern="[\(][0-9]{2}[\)][\s][0-9]{4}[\-][0-9]{4}" >
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="fundo_texto">
+        Email:
+        </div>
+
+        <div class="fundo_input">
+        <input class="entrada" type="email" name="email" placeholder="Informe um email válido" >
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="fundo_texto4">
+        Rede Social:
+         </div>
+
+
+         <div class="fundo_input2">
+            <div><img src="Imagens/face.png"> &nbsp; http://facebook.com/<input type="text" name="facebook" placeholder="Perfil Facebook"></div>
+            <div class="clear"></div>
+            <div><img src="Imagens/linkedin.png"> &nbsp; http://linkedin.com/<input type="text" name="linkedin" placeholder="Perfil linkedin"></div>
+            <div class="clear"></div>
+            <div><img src="Imagens/skype.png"> &nbsp; <input type="text" name="skype" placeholder="Perfil skype"></div>
+         </div>
+
+         <div class="clear"></div>
+        
+        <h2 id="subTitulo">4. Conhecimentos</h2>
+
+        <div class="fundo_texto2">
+        <a>Linguagens de Programação:</a>
+        </div>
+
+        <div class="fundo_input">
+        <input type="checkbox" name="linguagemProgramacao" value="C/C++" />C/C++
+        <br>
+        <input type="checkbox" name="lingaugemProgramacao" value="Java"/>Java
+        <br>
+        <input type="checkbox" name="linguagemProgramacao" value="Visual basic"/>Visual basic
+        <br>
+        <input type="checkbox" name="linguagemProgramacao" value=".NET"/>.Net
+        <br>
+        <input type="checkbox" name="linguagemProgramacao" value="PHP"/>PHP
+        <br>
+        <input type="checkbox" name="linguagemProgramacao" valu="Python"/>Python
+        <br>
+        <input type="checkbox" name="linguagemProgramacao" value="HTML"/>HTML
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="fundo_texto">
+            Idiomas: 
+        </div>
+
+        <div class="fundo_input">
+        <select name="ingles">
+            <option selected value="selecione">Selecione</option>
+            <option value="basico">Básico</option>
+            <option value="intermediario">Intermediário</option>
+            <option value="avançado">Avançado</option>
+        </select>
+        &nbsp;|&nbsp;&nbsp;Espanhol: &nbsp;
+        <select name="espanhol">
+            <option selected value="selecione">Selecione</option>
+            <option value="basico">Básico</option>
+            <option value="intermediario">Intermediário</option>
+            <option value="avançado">Avançado</option>
+        </select>
+        </div>
+
+        <div class="clear"></div>
+
+        <br><br><br>
+
+
+        <div >
+        <input onclick="limpar();" class="botao" type="button" name="botao" value="Limpar"/>
+        <input onclick="validar();" class="botao" type="button" name="botao" value="Enviar"/>
+        </div>
+
+</body>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+    
+
+
+</head>
+<body>
+    
+</body>
+</html>
